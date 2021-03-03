@@ -13,7 +13,7 @@ button.addEventListener('click', (e) => {
 
   const query = input.value;
 
-  fetch(`http://localhost:3000/weather?address=${query}`)
+  fetch(`/weather?address=${query}`)
     .then((res) => res.json())
     .then((data) => {
       if (data.error) {
